@@ -1,0 +1,744 @@
+/* Barre de navigation */
+.App-topbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background-color: #dbeafe;
+  border-bottom: 2px solid #c4c4c4; /* Gris clair */
+}
+
+.auth-buttons .btn-auth {
+  margin-left: 10px;
+  background-color: #c4c4c4; /* Gris clair */
+  color: #333; /* Texte gris foncé */
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons .btn-auth:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* Contenu principal */
+.App-header {
+  text-align: center;
+  background-color: #dbeafe;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333; /* Texte gris foncé */
+}
+
+/* Boutons */
+.button-group {
+  margin-top: 20px;
+}
+
+.button-group .btn-primary,
+.button-group .btn-secondary,
+.button-group .btn-danger,
+.button-group .btn-shopping {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+/* Boutons avec les couleurs */
+.button-group .btn-primary {
+  background-color: #2563eb;
+}
+
+.button-group .btn-secondary {
+  background-color: #c4c4c4; /* Gris clair */
+  color: #333; /* Texte gris foncé */
+}
+
+.button-group .btn-danger {
+  background-color: #1e57a1;
+}
+
+.button-group .btn-shopping {
+  background-color: #3b82f6;
+}
+
+/* Survol des boutons */
+.button-group .btn-primary:hover {
+  background-color: #2563eb;
+}
+.button-group .btn-secondary:hover {
+  background-color: #a9a9a9; /* Gris légèrement foncé */
+}
+.button-group .btn-danger:hover {
+  background-color: #93c5fd;
+}
+.button-group .btn-shopping:hover {
+  background-color: #93c5fd;
+}
+/* Style pour le conteneur du tableau */
+table.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style pour l'en-tête du tableau */
+table.product-table th {
+  background-color: #dbeafe;
+  color: #2563eb;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid #2563eb;
+}
+
+/* Style pour les cellules du tableau */
+table.product-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style pour les lignes impaires */
+table.product-table tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Style pour les lignes paires */
+table.product-table tr:nth-child(even) {
+  background-color: #fff;
+}
+
+/* Style pour les images des produits */
+.product-image {
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Boutons d'action */
+.btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-edit {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #0056b3;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+  margin-left: 5px;
+}
+
+.btn-delete:hover {
+  background-color: #93c5fd;
+}
+/* Contenu principal */
+.list-products {
+  padding: 20px;
+  background-color: #ffffff; /* Blanc */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #2563eb;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style pour le tableau */
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* En-tête du tableau */
+.products-table th {
+  background-color: #dbeafe;
+  color: #2563eb;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 3px solid #2563eb;
+}
+
+/* Cellules du tableau */
+.products-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #c4c4c4; /* Gris clair */
+}
+
+/* Lignes impaires */
+.products-table tr:nth-child(odd) {
+  background-color: #f8f8f8; /* Gris très clair */
+}
+
+/* Lignes paires */
+.products-table tr:nth-child(even) {
+  background-color: #ffffff; /* Blanc */
+}
+
+/* Style pour les images des produits */
+.product-image img {
+  width: 70px; /* Taille ajustée pour une meilleure présentation */
+  height: 70px;
+  object-fit: cover; /* Maintient les proportions sans déformation */
+  border-radius: 5px; /* Coins légèrement arrondis */
+  border: 1px solid #ddd;
+}
+/* Boutons d'action en gris */
+.btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+/* Bouton Modifier en gris clair */
+.btn-edit {
+  background-color: #c4c4c4; /* Gris clair */
+  color: #333; /* Texte gris foncé */
+}
+
+.btn-edit:hover {
+  background-color: #a9a9a9; /* Gris légèrement foncé */
+}
+
+/* Bouton Supprimer en gris foncé */
+.btn-delete {
+  background-color: #a9a9a9; /* Gris foncé */
+  color: white; /* Texte blanc */
+}
+
+.btn-delete:hover {
+  background-color: #a9a9a9; /* Gris légèrement foncé */
+}
+
+/* Section héros */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Ajustez la hauteur selon vos besoins */
+  background-color: #000; /* Couleur de fond par défaut */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-image {
+  background-image: url("https://via.placeholder.com/1920x800"); /* Remplacez par votre image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Couche sombre pour contraste */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+/* Conteneur principal des produits */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Carte d'un produit */
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* Image du produit */
+.product-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Bouton Ajouter au panier */
+.add-to-cart-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+/* Conteneur global */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Bouton Panier */
+.btn-cart {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-cart:hover {
+  background-color: #0056b3;
+}
+
+/* Section des produits */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Conteneur des produits */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Carte produit */
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* Image produit */
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Boutons de catégorie */
+.category-buttons {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.category-buttons button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #d3d3d3;
+  color: black;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background-color: #b0b0b0;
+}
+
+.category-buttons .active {
+  background-color: #a9a9a9;
+  color: white;
+}
+
+/* Bouton "Ajouter au panier" */
+.add-to-cart-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+/* Message Aucun produit disponible */
+.no-products {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-top: 20px;
+}
+/* Conteneur du bouton Panier */
+.cart-button-container {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.btn-cart {
+  padding: 15px 25px;
+  background-color: #a9a9a9; /* Gris */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px; /* Plus grand texte */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-cart:hover {
+  background-color: #808080; /* Gris foncé au survol */
+}
+
+/* Boutons de filtrage */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.filter-button {
+  padding: 15px 25px;
+  background-color: #f0f0f0;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px; /* Texte plus grand */
+  font-weight: bold;
+}
+
+.filter-button:hover {
+  background-color: #e0e0e0;
+  border-color: #aaa;
+}
+
+/* Conteneur des produits */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Carte de produit */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image du produit */
+.product-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Bouton Ajouter au panier */
+.add-to-cart-button {
+  margin-top: 15px;
+  padding: 15px 25px;
+  background-color: #a9a9a9; /* Gris */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px; /* Texte plus grand */
+  font-weight: bold;
+}
+
+.add-to-cart-button:hover {
+  background-color: #808080; /* Gris foncé */
+}
+
+/* Texte lorsqu'aucun produit n'est disponible */
+.no-products {
+  text-align: center;
+  font-size: 20px;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Style général du tableau */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+/* Style de l'entête du tableau */
+th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Alternance de couleur pour les lignes */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style des boutons Modifier et Supprimer */
+button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Bouton Modifier */
+button:first-child {
+  background-color: grey;
+  color: white;
+}
+
+button:first-child:hover {
+  background-color: #0056b3;
+}
+
+/* Bouton Supprimer */
+button:last-child {
+  background-color: gray;
+  color: white;
+}
+
+button:last-child:hover {
+  background-color: #93c5fd;
+}
+
+/* Message d'information */
+p {
+  color: black;
+  font-weight: bold;
+}
+
+/* pour tableau  adm*/
+
+/* commande */
+
+/* Conteneur principal */
+.panier-container {
+  padding: 20px;
+}
+
+/* Titre */
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Liste des produits dans le panier */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Élément individuel dans le panier */
+.panier-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Image du produit */
+.panier-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+/* Section des informations produit */
+.panier-item-info {
+  flex: 1;
+}
+
+/* Boutons d'action */
+.button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Bouton pour augmenter la quantité */
+.button-increment {
+  background-color: #007bff;
+  color: white;
+}
+
+.button-increment:hover {
+  background-color: #0056b3;
+}
+
+/* Bouton pour diminuer la quantité */
+.button-decrement {
+  background-color: #ffc107;
+  color: black;
+}
+
+.button-decrement:hover {
+  background-color: #e0a800;
+}
+
+/* Bouton pour supprimer */
+.button-remove {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.button-remove:hover {
+  background-color: #3b82f6;
+}
+
+/* Bouton Vider le panier */
+.button-clear {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #dbeafe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-clear:hover {
+  background-color: #dbeafe;
+}
+
+/* Bouton Passer la commande */
+.button-order {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-order:hover {
+  background-color: #1d4ed8;
+}
+
+/* Message de confirmation de commande */
+.order-message {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8d7da;
+  color: black;
+  white-space: pre-wrap; /* Conserve les sauts de ligne */
+}
